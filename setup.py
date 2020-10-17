@@ -43,7 +43,7 @@ def requirements():
 		touch config.data
 		""")
 	banner()
-	print(gr+"[+] requierments Installed.\n")
+	print(gr+"[+] Tələblər quraşdırıldı ! \n")
 
 
 def config_setup():
