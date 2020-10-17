@@ -1,5 +1,5 @@
 #!/bin/env python3
-# code by : youtube.com/theunknon
+# code by : t.me/Texnoloq
 
 """
 
@@ -37,7 +37,7 @@ def requirements():
 		csv_lib()
 	else:
 		pass
-	print(gr+"[+] Installing requierments ...")
+	print(gr+"[+] Tələblər yüklənilir ...")
 	os.system("""
 		pip3 install telethon requests configparser
 		python3 -m pip install telethon requests configparser
