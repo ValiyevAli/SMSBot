@@ -30,8 +30,8 @@ def requirements():
 			python3 -m pip install cython numpy pandas
 			""")
 	banner()
-	print(gr+'['+cy+'+'+gr+']'+cy+' it will take upto 10 min to install csv merge.')
-	input_csv = input(gr+'['+cy+'+'+gr+']'+cy+' do you want to enable csv merge (y/n): ').lower()
+	print(gr+'['+cy+'+'+gr+']'+cy+' cvs birləşdirmə prossesi 10 dəqiqənizi ala bilər.')
+	input_csv = input(gr+'['+cy+'+'+gr+']'+cy+' cvs birləşdirmə aktivləşdirilsin? (y/n): ').lower()
 	if input_csv == "y":
 		csv_lib()
 	else:
