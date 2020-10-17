@@ -12,12 +12,9 @@ cy="\033[1;36m"
 
 def banner():
     print(f"""
-{re}╔╦╗{cy}┌─┐┬  ┌─┐{re}╔═╗  ╔═╗{cy}┌─┐┬─┐┌─┐┌─┐┌─┐┬─┐
-{re} ║ {cy}├┤ │  ├┤ {re}║ ╦  ╚═╗{cy}│  ├┬┘├─┤├─┘├┤ ├┬┘
-{re} ╩ {cy}└─┘┴─┘└─┘{re}╚═╝  ╚═╝{cy}└─┘┴└─┴ ┴┴  └─┘┴└─
-
-            version : 3.1
-        youtube.com/theunknon
+       Üzv kopyalama
+       Version : v1.0
+       t.me/Texnoloq
         """)
 
 cpass = configparser.RawConfigParser()
@@ -31,7 +28,7 @@ try:
 except KeyError:
     os.system('clear')
     banner()
-    print(re+"[!] run python3 setup.py first !!\n")
+    print(re+"[!] Əvvəlcə bu əmri daxil edin :  python3 setup.py !!\n")
     sys.exit(1)
 
 client.connect()
@@ -39,7 +36,7 @@ if not client.is_user_authorized():
     client.send_code_request(phone)
     os.system('clear')
     banner()
-    client.sign_in(phone, input(gr+'[+] Enter the code: '+re))
+    client.sign_in(phone, input(gr+'[+] Kodu daxil edin: '+re))
  
 os.system('clear')
 banner()
@@ -64,22 +61,22 @@ for chat in chats:
     except:
         continue
  
-print(gr+'[+] Choose a group to scrape members :'+re)
+print(gr+'[+] Üzv daşımaq istədiyiniz qrupu seçin :'+re)
 i=0
 for g in groups:
     print(gr+'['+cy+str(i)+gr+']'+cy+' - '+ g.title)
     i+=1
  
 print('')
-g_index = input(gr+"[+] Enter a Number : "+re)
+g_index = input(gr+"[+] Nömrəsini daxil edin : "+re)
 target_group=groups[int(g_index)]
  
-print(gr+'[+] Fetching Members...')
+print(gr+'[+] İstifadəçilər kopyalanır...')
 time.sleep(1)
 all_participants = []
 all_participants = client.get_participants(target_group, aggressive=True)
  
-print(gr+'[+] Saving In file...')
+print(gr+'[+] Fayl yadda saxlanılır....')
 time.sleep(1)
 with open("members.csv","w",encoding='UTF-8') as f:
     writer = csv.writer(f,delimiter=",",lineterminator="\n")
