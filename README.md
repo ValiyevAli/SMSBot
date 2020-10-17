@@ -18,44 +18,27 @@
 * Platfotma olaraq "Other" seçin :
 *  "api_id" və "api_hash" məlumatlarını kopyalayın ( setup.py da ehtiyac olacaq )
 
-## • How To Install and Use
+## • Qurulma qaydadı
 
-`$ pkg install -y git python`
+`$ pkg install git -y
 
-`$ git clone https://github.com/th3unkn0n/TeleGram-Scraper.git`
+`$ pkg install python -y
 
-`$ cd TeleGram-Scraper`
+`$ pkg update -y
 
-* Install requierments
+`$ git clone https://github.com/Texnoloq/Texnoloq-smsbot/ `
+
+`$ cd Texnoloq-smsbot`
+
+
+* Tələbləri quraşdırma
 
 `$ python3 setup.py -i`
 
-* setup configration file ( apiID, apiHASH )
+* Kopyaladığınız məlumatları sırasi ilə daxil edin. ( apiID, apiHASH, Telefon nömrənizi )
 
-`$ python3 setup.py -c`
+`$ python3 setup.py -c `
 
-* To Genrate User Data
-
-`$ python3 scraper.py`
-
-* ( members.csv is default if you changed name use it )
-* Send Bulk sms To Collected Data 
-
-`$ python3 smsbot.py members.csv`
-
-* Update Tool
+*  Botu Güncəlləmək
 
 `$ python3 setup.py -u`
-
----
-
-<p align="center">
-  Follow Me On
-</p>
-<p align="center">
-  <a href="https://youtube.com/theunknon">
-    <img src="https://github.com/th3unkn0n/extra/blob/master/.img/yt.png" width="40" height="40">
-  </a>
-  <a href="https://instagram.com/th3unkn0n">
-    <img src="https://github.com/th3unkn0n/extra/blob/master/.img/ig.png" width="40" height="40">
-</p>
