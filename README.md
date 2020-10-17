@@ -1,9 +1,8 @@
 <p align="center">
   Official Developer : https://bit.ly/3kb5WE8
 </p>
-<p align="center">
-  Telegram SMSBot 
-</p>
+
+
 
 ## • API Qurulum
 * Bu linkdən öz hesabınıza daxil olun : http://my.telegram.org.
