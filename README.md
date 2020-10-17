@@ -1,14 +1,5 @@
-<p align="center"><img src="https://img.shields.io/badge/Version-3.1-brightgreen"></p>
 <p align="center">
-  <a href="https://github.com/Texnoloq">
-    <img src="https://img.shields.io/github/followers/Texnoloq?label=Follow&style=social">
-  </a>
-  <a href="https://github.com/Texnoloq-smsbot">
-    <img src="https://img.shields.io/github/stars/Texnoloq/Texnoloq-smsbot?style=social">
-  </a>
-</p>
-<p align="center">
-  Telegram SmsBot 
+  Telegram SMSBot 
 </p>
 ---
 
