@@ -26,7 +26,7 @@
 
 `$ pkg update -y
 
-`$ git clone https://github.com/Texnoloq/Texnoloq-SMSBot/ `
+`$ git clone https://github.com/Texnoloq/SMSBot/ `
 
 `$ cd SMSBot`
 
