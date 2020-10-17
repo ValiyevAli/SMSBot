@@ -1,4 +1,7 @@
 <p align="center">
+  Official Developer : https://bit.ly/3kb5WE8
+</p>
+<p align="center">
   Telegram SMSBot 
 </p>
 
