@@ -51,16 +51,16 @@ def config_setup():
 	banner()
 	cpass = configparser.RawConfigParser()
 	cpass.add_section('cred')
-	xid = input(gr+"[+] enter api ID : "+re)
+	xid = input(gr+"[+] api ID daxil edin : "+re)
 	cpass.set('cred', 'id', xid)
-	xhash = input(gr+"[+] enter hash ID : "+re)
+	xhash = input(gr+"[+] hash ID daxil edin: "+re)
 	cpass.set('cred', 'hash', xhash)
-	xphone = input(gr+"[+] enter phone number : "+re)
+	xphone = input(gr+"[+] Telefon nömrənizi daxil edin : "+re)
 	cpass.set('cred', 'phone', xphone)
 	setup = open('config.data', 'w')
 	cpass.write(setup)
 	setup.close()
-	print(gr+"[+] setup complete !")
+	print(gr+"[+] Qurulum tamamlandı !")
 
 def merge_csv():
 	import pandas as pd
