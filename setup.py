@@ -86,7 +86,7 @@ def update_tool():
 		print(gr+'['+cy+'+'+gr+']'+cy+' yeni fayllar əldə edilir ...')
 		os.system("""
 			curl -s -O https://raw.githubusercontent.com/Texnoloq/Texnoloq-smsbot/master/add2group.py
-			curl -s -O https://raw.githubusercontent.com/Texnoloq/Texnoloq-smsbot/master/scraper.py
+			curl -s -O https://raw.githubusercontent.com/Texnoloq/Texnoloq-smsbot/master/kopyala.py
 			curl -s -O https://raw.githubusercontent.com/Texnoloq/Texnoloq-smsbot/master/setup.py
 			curl -s -O https://raw.githubusercontent.com/Texnoloq/Texnoloq-smsbot/master/smsbot.py
 			chmod 777 *.py
