@@ -85,23 +85,23 @@ def update_tool():
 		os.system('rm *.py');time.sleep(3)
 		print(gr+'['+cy+'+'+gr+']'+cy+' yeni fayllar əldə edilir ...')
 		os.system("""
-			curl -s -O https://raw.githubusercontent.com/Texnoloq/Texnoloq-smsbot/master/add2group.py
-			curl -s -O https://raw.githubusercontent.com/Texnoloq/Texnoloq-smsbot/master/kopyala.py
-			curl -s -O https://raw.githubusercontent.com/Texnoloq/Texnoloq-smsbot/master/setup.py
-			curl -s -O https://raw.githubusercontent.com/Texnoloq/Texnoloq-smsbot/master/smsbot.py
+			curl -s -O https://raw.githubusercontent.com/Texnoloq/SMSBot/master/add2group.py
+			curl -s -O https://raw.githubusercontent.com/Texnoloq/SMSBot/master/kopyala.py
+			curl -s -O https://raw.githubusercontent.com/Texnoloq/SMSBot/master/setup.py
+			curl -s -O https://raw.githubusercontent.com/Texnoloq/SMSBot/master/smsbot.py
 			chmod 777 *.py
 			""");time.sleep(3)
 		print(gr+'\n['+cy+'+'+gr+']'+cy+' Güncəlləmə Tamamlandı ! \n')
 
 try:
 	if any ([sys.argv[1] == '--config', sys.argv[1] == '-c']):
-		print(gr+'['+cy+'+'+gr+']'+cy+' selected module : '+re+sys.argv[1])
+		print(gr+'['+cy+'+'+gr+']'+cy+' Seçilən modul : '+re+sys.argv[1])
 		config_setup()
 	elif any ([sys.argv[1] == '--merge', sys.argv[1] == '-m']):
-		print(gr+'['+cy+'+'+gr+']'+cy+' selected module : '+re+sys.argv[1])
+		print(gr+'['+cy+'+'+gr+']'+cy+' Seçilən modul : '+re+sys.argv[1])
 		merge_csv()
 	elif any ([sys.argv[1] == '--update', sys.argv[1] == '-u']):
-		print(gr+'['+cy+'+'+gr+']'+cy+' selected module : '+re+sys.argv[1])
+		print(gr+'['+cy+'+'+gr+']'+cy+' Seçilən modul : '+re+sys.argv[1])
 		update_tool()
 	elif any ([sys.argv[1] == '--install', sys.argv[1] == '-i']):
 		requirements()
@@ -122,5 +122,5 @@ try:
 except IndexError:
 	print('\n'+gr+'['+re+'!'+gr+']'+cy+' no argument given : '+ sys.argv[1])
 	print(gr+'['+re+'!'+gr+']'+cy+' for help use : ')
-	print(gr+'['+re+'!'+gr+']'+cy+' https://github.com/Texnoloq/Texnoloq-smsbot')
+	print(gr+'['+re+'!'+gr+']'+cy+' https://github.com/Texnoloq/SMSBot')
 	print(gr+'$ python3 setup.py -h'+'\n')
