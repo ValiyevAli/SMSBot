@@ -61,7 +61,7 @@ for chat in chats:
     except:
         continue
  
-print(gr+'[+] Üzv daşımaq istədiyiniz qrupu seçin :'+re)
+print(gr+'[+] Üzv kopyalamaq istədiyiniz qrupu seçin :'+re)
 i=0
 for g in groups:
     print(gr+'['+cy+str(i)+gr+']'+cy+' - '+ g.title)
@@ -96,4 +96,4 @@ with open("members.csv","w",encoding='UTF-8') as f:
             last_name= ""
         name= (first_name + ' ' + last_name).strip()
         writer.writerow([username,user.id,user.access_hash,name,target_group.title, target_group.id])      
-print(gr+'[+] Members scraped successfully.')
+print(gr+'[+] İstifadəçilər uğurla kopyalandı ! ')
