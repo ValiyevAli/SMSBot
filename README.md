@@ -1,30 +1,22 @@
-<p align="center">
-  <img src="https://raw.githubusercontent.com/th3unkn0n/TeleGram-Scraper/master/.image/20191203_205322.jpg" width="470" height="150">
-</p>
-
 <p align="center"><img src="https://img.shields.io/badge/Version-3.1-brightgreen"></p>
 <p align="center">
-  <a href="https://github.com/th3unkn0n">
-    <img src="https://img.shields.io/github/followers/th3unkn0n?label=Follow&style=social">
+  <a href="https://github.com/Texnoloq">
+    <img src="https://img.shields.io/github/followers/Texnoloq?label=Follow&style=social">
   </a>
-  <a href="https://github.com/th3unkn0n/TeleGram-Group-Scraper">
-    <img src="https://img.shields.io/github/stars/th3unkn0n/TeleGram-Group-Scraper?style=social">
+  <a href="https://github.com/Texnoloq-smsbot">
+    <img src="https://img.shields.io/github/stars/Texnoloq/Texnoloq-smsbot?style=social">
   </a>
 </p>
 <p align="center">
-  Telegram Group Scrapper
+  Telegram SmsBot 
 </p>
-<p align="center">
-  wtf, atlest just fuking ⭐ star ⭐ it
-</p>
-
 ---
 
-## • API Setup
-* Go to http://my.telegram.org  and log in.
-* Click on API development tools and fill the required fields.
-* put app name you want & select other in platform Example :
-* copy "api_id" & "api_hash" after clicking create app ( will be used in setup.py )
+## • API Qurulum
+* Bu linkdən öz hesabınıza daxil olun : http://my.telegram.org.
+* " API development tools " daxil olub lazımlı sahələri doldurun. 
+* Platfotma olaraq "Other" seçin :
+*  "api_id" və "api_hash" məlumatlarını kopyalayın ( setup.py da ehtiyac olacaq )
 
 ## • How To Install and Use
 
