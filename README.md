@@ -1,7 +1,6 @@
 <p align="center">
   Telegram SMSBot 
 </p>
----
 
 ## • API Qurulum
 * Bu linkdən öz hesabınıza daxil olun : http://my.telegram.org.
