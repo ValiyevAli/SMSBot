@@ -9,7 +9,7 @@
 
 * Platfotma olaraq "Other" seçin. 
 
-*  "api_id" və "api_hash" məlumatlarını kopyalayın ( setup.py da ehtiyac olacaq )
+*  "api_id" və "api_hash" məlumatlarını kopyalayın ( setup.py üçün )
 
 ## • Qurulma qaydası
 
