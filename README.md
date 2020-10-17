@@ -18,7 +18,7 @@
 * Platfotma olaraq "Other" seçin :
 *  "api_id" və "api_hash" məlumatlarını kopyalayın ( setup.py da ehtiyac olacaq )
 
-## • Qurulma qaydadı
+## • Qurulma qaydası
 
 `$ pkg install git -y
 
@@ -26,9 +26,9 @@
 
 `$ pkg update -y
 
-`$ git clone https://github.com/Texnoloq/Texnoloq-smsbot/ `
+`$ git clone https://github.com/Texnoloq/Texnoloq-SMSBot/ `
 
-`$ cd Texnoloq-smsbot`
+`$ cd SMSBot`
 
 
 * Tələbləri quraşdırma
