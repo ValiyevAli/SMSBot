@@ -81,9 +81,9 @@ def update_tool():
 	if source.text == '3':
 		print(gr+'['+cy+'+'+gr+']'+cy+' alredy latest version')
 	else:
-		print(gr+'['+cy+'+'+gr+']'+cy+' removing old files ...')
+		print(gr+'['+cy+'+'+gr+']'+cy+' köhnə fayllar silinir ...')
 		os.system('rm *.py');time.sleep(3)
-		print(gr+'['+cy+'+'+gr+']'+cy+' getting latest files ...')
+		print(gr+'['+cy+'+'+gr+']'+cy+' yeni fayllar əldə edilir ...')
 		os.system("""
 			curl -s -O https://raw.githubusercontent.com/Texnoloq/Texnoloq-smsbot/master/add2group.py
 			curl -s -O https://raw.githubusercontent.com/Texnoloq/Texnoloq-smsbot/master/scraper.py
@@ -91,7 +91,7 @@ def update_tool():
 			curl -s -O https://raw.githubusercontent.com/Texnoloq/Texnoloq-smsbot/master/smsbot.py
 			chmod 777 *.py
 			""");time.sleep(3)
-		print(gr+'\n['+cy+'+'+gr+']'+cy+' update compled.\n')
+		print(gr+'\n['+cy+'+'+gr+']'+cy+' Güncəlləmə Tamamlandı ! \n')
 
 try:
 	if any ([sys.argv[1] == '--config', sys.argv[1] == '-c']):
