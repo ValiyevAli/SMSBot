@@ -4,8 +4,11 @@
 
 ## • API Qurulum
 * Bu linkdən öz hesabınıza daxil olun : http://my.telegram.org.
+
 * " API development tools " daxil olub lazımlı sahələri doldurun. 
-* Platfotma olaraq "Other" seçin :
+
+* Platfotma olaraq "Other" seçin. 
+
 *  "api_id" və "api_hash" məlumatlarını kopyalayın ( setup.py da ehtiyac olacaq )
 
 ## • Qurulma qaydası
