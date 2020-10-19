@@ -18,12 +18,8 @@ class main():
     def banner():
         
         print(f"""
-    {re}╔╦╗{cy}┌─┐┬  ┌─┐{re}╔═╗  ╔═╗{cy}┌─┐┬─┐┌─┐┌─┐┌─┐┬─┐
-    {re} ║ {cy}├┤ │  ├┤ {re}║ ╦  ╚═╗{cy}│  ├┬┘├─┤├─┘├┤ ├┬┘
-    {re} ╩ {cy}└─┘┴─┘└─┘{re}╚═╝  ╚═╝{cy}└─┘┴└─┴ ┴┴  └─┘┴└─
-
-                version : 3.1
-            youtube.com/theunknon
+         SMSBot 
+         t.me/Texnoloq
             """)
 
     def send_sms():
@@ -62,10 +58,10 @@ class main():
                 user['access_hash'] = int(row[2])
                 user['name'] = row[3]
                 users.append(user)
-        print(gr+"[1] send sms by user ID\n[2] send sms by username ")
+        print(gr+"[1] User İD ilə göndər\n[2] İsrifadəçi adı ilə göndər ")
         mode = int(input(gr+"Input : "+re))
          
-        message = input(gr+"[+] Enter Your Message : "+re)
+        message = input(gr+"[+] Mesajınızı daxil edin : "+re)
          
         for user in users:
             if mode == 2:
@@ -79,20 +75,20 @@ class main():
                 client.disconnect()
                 sys.exit()
             try:
-                print(gr+"[+] Sending Message to:", user['name'])
+                print(gr+"[+] Mesaj göndərilir:", user['name'])
                 client.send_message(receiver, message.format(user['name']))
-                print(gr+"[+] Waiting {} seconds".format(SLEEP_TIME))
+                print(gr+"[+] Gözlənilir {} saniyə".format(SLEEP_TIME))
                 time.sleep(SLEEP_TIME)
             except PeerFloodError:
                 print(re+"[!] Getting Flood Error from telegram. \n[!] Script is stopping now. \n[!] Please try again after some time.")
                 client.disconnect()
                 sys.exit()
             except Exception as e:
-                print(re+"[!] Error:", e)
-                print(re+"[!] Trying to continue...")
+                print(re+"[!] Xəta:", e)
+                print(re+"[!] Davam etməyə çalışılır...")
                 continue
         client.disconnect()
-        print("Done. Message sent to all users.")
+        print("Tamamlandı! Mesaj bütün istifadəçilərə göndərildi")
 
 
 
