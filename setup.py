@@ -3,8 +3,8 @@
 
 """
 
-you can re run setup.py 
-if you have added some wrong value
+setup.py-ni yenidən işə sala bilərsiniz
+səhv bir dəyər əlavə etmisinizsə 
 
 """
 re="\033[1;31m"
@@ -24,7 +24,7 @@ def banner():
 def requirements():
 	def csv_lib():
 		banner()
-		print(gr+'['+cy+'+'+gr+']'+cy+' this may take some time ...')
+		print(gr+'['+cy+'+'+gr+']'+cy+' bu bir az vaxt ala bilər ...')
 		os.system("""
 			pip3 install cython numpy pandas
 			python3 -m pip install cython numpy pandas
@@ -69,10 +69,10 @@ def merge_csv():
 	file1 = pd.read_csv(sys.argv[2])
 	file2 = pd.read_csv(sys.argv[3])
 	print(gr+'['+cy+'+'+gr+']'+cy+' merging '+sys.argv[2]+' & '+sys.argv[3]+' ...')
-	print(gr+'['+cy+'+'+gr+']'+cy+' big files can take some time ... ')
+	print(gr+'['+cy+'+'+gr+']'+cy+' böyük fayllar biraz vaxt ala bilər ... ')
 	merge = file1.merge(file2, on='username')
 	merge.to_csv("output.csv", index=False)
-	print(gr+'['+cy+'+'+gr+']'+cy+' saved file as "output.csv"\n')
+	print(gr+'['+cy+'+'+gr+']'+cy+'  saxlanan fayl "output.csv"\n')
 
 def update_tool():
 	import requests as r
@@ -85,7 +85,6 @@ def update_tool():
 		os.system('rm *.py');time.sleep(3)
 		print(gr+'['+cy+'+'+gr+']'+cy+' yeni fayllar əldə edilir ...')
 		os.system("""
-			curl -s -O https://raw.githubusercontent.com/Texnoloq/SMSBot/master/add2group.py
 			curl -s -O https://raw.githubusercontent.com/Texnoloq/SMSBot/master/kopyala.py
 			curl -s -O https://raw.githubusercontent.com/Texnoloq/SMSBot/master/setup.py
 			curl -s -O https://raw.githubusercontent.com/Texnoloq/SMSBot/master/smsbot.py
