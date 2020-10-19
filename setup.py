@@ -19,6 +19,7 @@ def banner():
 	print(f"""
 	Qurulum
         t.me/Texnoloq
+        Version : 1.0
 	""")
 
 def requirements():
